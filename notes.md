@@ -12,7 +12,6 @@ Three option toggle: light/dark/system pref -- [codepen](https://codepen.io/rend
 
 CSS VARIABLES (Custom properties) -- [CSS tricks](https://css-tricks.com/updating-a-css-variable-with-javascript/)
 
-
 Accessibility
 
 - Use correct heading tags
