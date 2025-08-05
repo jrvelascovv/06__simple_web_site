@@ -22,6 +22,12 @@
   padding: u.rem(25);
   text-align: center;
   border-radius: u.rem(5);
+  transition: background 0.15s ease-in-out;
+
+  &:hover {
+    background-color: var(--dark-card-hover);
+    cursor: pointer;
+  }
 
   &__platform {
     height: u.rem(20);
@@ -29,6 +35,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: u.rem(28);
+  }
+
+  &__subtitle {
+    font-size: u.rem(14);
+    font-weight: bold;
   }
 
   &--facebook {
@@ -76,8 +87,9 @@
     &--big {
       font-size: u.rem(56);
     }
-
+    
     &--small {
+      font-size: u.rem(32);
     }
   }
 
