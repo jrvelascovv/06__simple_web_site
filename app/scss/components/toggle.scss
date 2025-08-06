@@ -1,49 +1,33 @@
 @use '../util' as u;
 
 .toggle {
-  border: none;
   display: grid;
-  grid-template-columns: 1fr u.rem(60) 1fr;
-  gap: u.rem(4) u.rem(8);
+  grid-template-columns: 1fr u.rem(48);
+  gap: u.rem(13);
+  border: none;
 
   label {
     font-size: u.rem(14);
-    align-self: center;
-    cursor: pointer;
+    font-weight: bold;
+    color: var(--toggle);
+    // align-self: center;
     
     &[for='dark'] {
-      grid-column: 1 / 2;
-      justify-self: end;
-    }
-    &[for='system'] {
-      grid-column: 1 / 4;
-      grid-row: 2 / 3;
-      justify-self: center;
-    }
-    &[for='light'] {
-      grid-column: 3 / 4;
-      justify-self: start;
+      line-height: u.rem(24);
     }
   }
-
+  
   &__wrapper {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     height: u.rem(24);
     position: relative;
-    // cursor: pointer;
   }
 
   input[type='radio'] {
     opacity: 0;
-    margin: 0;
-    width: u.rem(16);
-    height: u.rem(22);
+    margin: 0 u.rem(-2);
+    width: u.rem(24);
+    height: u.rem(24);
     cursor: pointer;
-
-    &:first-of-type {
-      margin-left: u.rem(3);
-    }
 
     &:focus ~ .toggle__button {
       border: 2px solid white;
@@ -61,7 +45,6 @@
       var(--toggle-bg-start) 98.02%
     );
     pointer-events: none;
-    z-index: -10;
   }
 
   &__button {
@@ -73,17 +56,12 @@
     height: u.rem(18);
     border-radius: 50%;
     background-color: var(--dark-bg);
-    transition: all 0.15s ease-in-out;
+    // transition: all 0.15s ease-in-out;
   }
 
   #light:checked ~ .toggle__button {
     right: u.rem(3);
+    // right: calc(100% - 21px);
     left: auto;
-  }
-
-  #system:checked ~ .toggle__button {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
   }
 }
