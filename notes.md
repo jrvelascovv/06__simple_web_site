@@ -6,7 +6,8 @@ What HTML markup (accessible) -- [accessible](https://scottaohara.github.io/a11y
 
 Use fieldset, legend, radio inputs
 
-Switching between light/dark modes via JS and prefers-color-scheme media query -- [MDN preferes-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+Switching between light/dark modes via JS and prefers-color-scheme media query -- [MDN preferes-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) y además
+[piccalilli](https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/)
 
 Three option toggle: light/dark/system pref -- [codepen](https://codepen.io/renddrew/pen/bRomab?editors=1100)
 
